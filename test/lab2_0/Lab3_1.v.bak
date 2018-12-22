@@ -1,0 +1,7 @@
+module Lab3_1(F1,F2,A,B,C,D);
+input[0:3] A;
+output[0:2] F;
+
+assign F[0]=A[0]||(A[1]&&A[2])||(!A[1]&&A[3]);
+assign F[1]=(!A[1]&&A[2])||(A[1]&&!A[2]&&!A[3]);
+endmodule 

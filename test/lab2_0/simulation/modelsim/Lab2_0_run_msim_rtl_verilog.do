@@ -1,0 +1,9 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/altera/13.0sp1/quartus/bin64/lab2_0 {C:/altera/13.0sp1/quartus/bin64/lab2_0/multiplexer_4to1.v}
+

@@ -1,0 +1,11 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/altera/13.0sp1/quartus/bin64/lab2_0 {C:/altera/13.0sp1/quartus/bin64/lab2_0/half_adder.v}
+vlog -vlog01compat -work work +incdir+C:/altera/13.0sp1/quartus/bin64/lab2_0 {C:/altera/13.0sp1/quartus/bin64/lab2_0/carry_lookahead_generator.v}
+vlog -vlog01compat -work work +incdir+C:/altera/13.0sp1/quartus/bin64/lab2_0 {C:/altera/13.0sp1/quartus/bin64/lab2_0/carry_lookahead_4_bit_adder_gatelevel.v}
+

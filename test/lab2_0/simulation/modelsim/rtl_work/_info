@@ -1,0 +1,44 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.0sp1\quartus\bin64\lab2_0\simulation\modelsim
+vmultiplexer_4to1
+I]jMmclP1f9WV7f7KDfGFC3
+VY>Hk2jVEW;^o`]KQo[n>S1
+Z1 dC:\altera\13.0sp1\quartus\bin64\lab2_0\simulation\modelsim
+w1545490710
+8C:/altera/13.0sp1/quartus/bin64/lab2_0/multiplexer_4to1.v
+FC:/altera/13.0sp1/quartus/bin64/lab2_0/multiplexer_4to1.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+o-vlog01compat -work work -O0
+!i10b 1
+!s100 IOZm7]@gNeWURz=U[_=260
+!s85 0
+!s108 1545494102.120000
+!s107 C:/altera/13.0sp1/quartus/bin64/lab2_0/multiplexer_4to1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/altera/13.0sp1/quartus/bin64/lab2_0|C:/altera/13.0sp1/quartus/bin64/lab2_0/multiplexer_4to1.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+C:/altera/13.0sp1/quartus/bin64/lab2_0 -O0
+vtestbench_2_bit_multiplexer
+!i10b 1
+!s100 [Aga^1XIb9YhdZDKfE3JH3
+I^hVG?<ja0PXVgUi3AWaVS0
+Vh9e9F5eG1R?iNMKSeJAa=2
+R1
+w1545494169
+8C:/altera/13.0sp1/quartus/bin64/lab2_0/testbench_2_bit_multiplexer.v
+FC:/altera/13.0sp1/quartus/bin64/lab2_0/testbench_2_bit_multiplexer.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1545494232.538000
+!s107 C:/altera/13.0sp1/quartus/bin64/lab2_0/testbench_2_bit_multiplexer.v|
+!s90 -reportprogress|300|-work|work|C:/altera/13.0sp1/quartus/bin64/lab2_0/testbench_2_bit_multiplexer.v|
+!s101 -O0
+o-work work -O0
