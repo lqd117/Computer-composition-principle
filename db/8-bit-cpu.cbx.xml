@@ -1,5 +1,6 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="8-bit-cpu">
+		<CBX_INST_ENTRY INSTANCE_NAME="|RAM_test|RAM8:inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_u6k1.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
