@@ -1,20 +1,16 @@
-Fitter Status : Successful - Sun Jan 06 19:48:25 2019
+Fitter Status : Successful - Sun Jan 06 23:04:24 2019
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
 Revision Name : 8-bit-cpu
-Top-level Entity Name : RAM_test
-Family : Cyclone IV GX
-Device : EP4CGX15BF14C6
+Top-level Entity Name : cpu_8bit
+Family : Cyclone III
+Device : EP3C55F484C8
 Timing Models : Final
-Total logic elements : 0 / 14,400 ( 0 % )
-    Total combinational functions : 0 / 14,400 ( 0 % )
-    Dedicated logic registers : 0 / 14,400 ( 0 % )
-Total registers : 0
-Total pins : 26 / 81 ( 32 % )
+Total logic elements : 559 / 55,856 ( 1 % )
+    Total combinational functions : 557 / 55,856 ( < 1 % )
+    Dedicated logic registers : 19 / 55,856 ( < 1 % )
+Total registers : 19
+Total pins : 161 / 328 ( 49 % )
 Total virtual pins : 0
-Total memory bits : 2,048 / 552,960 ( < 1 % )
-Embedded Multiplier 9-bit elements : 0
-Total GXB Receiver Channel PCS : 0 / 2 ( 0 % )
-Total GXB Receiver Channel PMA : 0 / 2 ( 0 % )
-Total GXB Transmitter Channel PCS : 0 / 2 ( 0 % )
-Total GXB Transmitter Channel PMA : 0 / 2 ( 0 % )
-Total PLLs : 0 / 3 ( 0 % )
+Total memory bits : 3,584 / 2,396,160 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 312 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

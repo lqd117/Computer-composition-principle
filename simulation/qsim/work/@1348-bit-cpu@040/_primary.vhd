@@ -1,0 +1,48 @@
+library verilog;
+use verilog.vl_types.all;
+entity \8-bit-cpu\ is
+    port(
+        FC              : out    vl_logic;
+        RD_B            : out    vl_logic;
+        T2              : out    vl_logic;
+        CLK             : in     vl_logic;
+        STEP            : in     vl_logic;
+        T1              : out    vl_logic;
+        SWA             : in     vl_logic;
+        SWB             : in     vl_logic;
+        RST             : in     vl_logic;
+        FZ              : out    vl_logic;
+        T3              : out    vl_logic;
+        IR              : out    vl_logic_vector(7 downto 0);
+        PC_B            : out    vl_logic;
+        LDIR            : out    vl_logic;
+        DOUT_B          : out    vl_logic;
+        LOAD            : out    vl_logic;
+        T4              : out    vl_logic;
+        LDPC            : out    vl_logic;
+        LDAR            : out    vl_logic;
+        \BUS\           : out    vl_logic_vector(7 downto 0);
+        RAM             : out    vl_logic_vector(7 downto 0);
+        M               : out    vl_logic_vector(24 downto 1);
+        AR              : out    vl_logic_vector(7 downto 0);
+        RAM_B           : out    vl_logic;
+        RJ_B            : out    vl_logic;
+        ALU_B           : out    vl_logic;
+        RS_B            : out    vl_logic;
+        LDDR1           : out    vl_logic;
+        LDDR2           : out    vl_logic;
+        LDRI            : out    vl_logic;
+        SW_B            : out    vl_logic;
+        \IN\            : in     vl_logic_vector(7 downto 0);
+        SFT_B           : out    vl_logic;
+        ALU             : out    vl_logic_vector(7 downto 0);
+        DOUT            : out    vl_logic_vector(7 downto 0);
+        DR1             : out    vl_logic_vector(7 downto 0);
+        DR2             : out    vl_logic_vector(7 downto 0);
+        PC              : out    vl_logic_vector(7 downto 0);
+        R0              : out    vl_logic_vector(7 downto 0);
+        R1              : out    vl_logic_vector(7 downto 0);
+        R2              : out    vl_logic_vector(7 downto 0);
+        uA              : out    vl_logic_vector(5 downto 0)
+    );
+end \8-bit-cpu\;

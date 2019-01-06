@@ -1,6 +1,8 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="8-bit-cpu">
-		<CBX_INST_ENTRY INSTANCE_NAME="|RAM_test|RAM8:inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_u6k1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu_8bit|RAM8:inst3|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_r1k1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu_8bit|REGS_MD:inst4|counter:inst|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_k5j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu_8bit|uPC:inst2|uP_ROM:inst6|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_gqb1.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
