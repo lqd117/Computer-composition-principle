@@ -61,15 +61,15 @@ applicable agreement for further details.
 	(port
 		(pt 0 112)
 		(input)
-		(text "IR3" (rect 0 0 17 14)(font "Arial" (font_size 8)))
-		(text "IR3" (rect 21 107 38 121)(font "Arial" (font_size 8)))
+		(text "IR2" (rect 0 0 17 14)(font "Arial" (font_size 8)))
+		(text "IR2" (rect 21 107 38 121)(font "Arial" (font_size 8)))
 		(line (pt 0 112)(pt 16 112))
 	)
 	(port
 		(pt 0 128)
 		(input)
-		(text "IR4" (rect 0 0 17 14)(font "Arial" (font_size 8)))
-		(text "IR4" (rect 21 123 38 137)(font "Arial" (font_size 8)))
+		(text "IR3" (rect 0 0 17 14)(font "Arial" (font_size 8)))
+		(text "IR3" (rect 21 123 38 137)(font "Arial" (font_size 8)))
 		(line (pt 0 128)(pt 16 128))
 	)
 	(port

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for 8-bit-cpu
-Sun Jan 06 13:28:47 2019
+Sun Jan 06 14:57:06 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -15,8 +15,9 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
   7. Analysis & Synthesis Resource Utilization by Entity
   8. User-Specified and Inferred Latches
   9. General Register Statistics
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -42,16 +43,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Jan 06 13:28:47 2019            ;
+; Analysis & Synthesis Status        ; Successful - Sun Jan 06 14:57:06 2019            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; 8-bit-cpu                                        ;
-; Top-level Entity Name              ; REG0_2                                           ;
+; Top-level Entity Name              ; ALU_MD                                           ;
 ; Family                             ; Cyclone IV GX                                    ;
-; Total logic elements               ; 27                                               ;
-;     Total combinational functions  ; 27                                               ;
+; Total logic elements               ; 440                                              ;
+;     Total combinational functions  ; 440                                              ;
 ;     Dedicated logic registers      ; 0                                                ;
 ; Total registers                    ; 0                                                ;
-; Total pins                         ; 36                                               ;
+; Total pins                         ; 85                                               ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 0                                                ;
 ; Embedded Multiplier 9-bit elements ; 0                                                ;
@@ -68,7 +69,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; REG0_2             ; 8-bit-cpu          ;
+; Top-level entity name                                                      ; ALU_MD             ; 8-bit-cpu          ;
 ; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -166,13 +167,17 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                  ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                        ; Library ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------+---------+
-; REG0_2.bdf                       ; yes             ; User Block Diagram/Schematic File  ; F:/GitHub/Computer-composition-principle/REG0_2.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                             ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                   ; Library ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------+---------+
+; ALU181A.v                        ; yes             ; User Verilog HDL File              ; F:/GitHub/Computer-composition-principle/ALU181A.v             ;         ;
+; LDR0_2.bdf                       ; yes             ; User Block Diagram/Schematic File  ; F:/GitHub/Computer-composition-principle/LDR0_2.bdf            ;         ;
+; REG0_2.bdf                       ; yes             ; User Block Diagram/Schematic File  ; F:/GitHub/Computer-composition-principle/REG0_2.bdf            ;         ;
+; ALU_MD.bdf                       ; yes             ; User Block Diagram/Schematic File  ; F:/GitHub/Computer-composition-principle/ALU_MD.bdf            ;         ;
+; 74139m.bdf                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/74139m.bdf ;         ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------+---------+
 
 
 +---------------------------------------------+
@@ -180,22 +185,26 @@ applicable agreement for further details.
 +--------------------------+------------------+
 ; Resource                 ; Usage            ;
 +--------------------------+------------------+
-; I/O pins                 ; 36               ;
+; I/O pins                 ; 85               ;
 ; DSP block 9-bit elements ; 0                ;
-; Maximum fan-out node     ; inst3            ;
-; Maximum fan-out          ; 8                ;
-; Total fan-out            ; 138              ;
-; Average fan-out          ; 1.39             ;
+; Maximum fan-out node     ; M[21]~input      ;
+; Maximum fan-out          ; 85               ;
+; Total fan-out            ; 1562             ;
+; Average fan-out          ; 2.53             ;
 +--------------------------+------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                     ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; |REG0_2                    ; 27 (27)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 36   ; 0            ; |REG0_2             ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                     ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                 ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------+--------------+
+; |ALU_MD                    ; 440 (44)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 85   ; 0            ; |ALU_MD                             ; work         ;
+;    |ALU181A:inst1|         ; 362 (362)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU_MD|ALU181A:inst1               ; work         ;
+;    |LDR0_2:inst|           ; 7 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU_MD|LDR0_2:inst                 ; work         ;
+;       |74139m:ins123t2|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU_MD|LDR0_2:inst|74139m:ins123t2 ; work         ;
+;    |REG0_2:inst2|          ; 27 (27)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |ALU_MD|REG0_2:inst2                ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -204,31 +213,47 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------+---------------------+------------------------+
 ; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
 +-----------------------------------------------------+---------------------+------------------------+
-; inst[7]                                             ; inst3               ; yes                    ;
-; inst[6]                                             ; inst3               ; yes                    ;
-; inst[5]                                             ; inst3               ; yes                    ;
-; inst[4]                                             ; inst3               ; yes                    ;
-; inst[3]                                             ; inst3               ; yes                    ;
-; inst[2]                                             ; inst3               ; yes                    ;
-; inst[1]                                             ; inst3               ; yes                    ;
-; inst[0]                                             ; inst3               ; yes                    ;
-; inst1[7]                                            ; inst4               ; yes                    ;
-; inst1[6]                                            ; inst4               ; yes                    ;
-; inst1[5]                                            ; inst4               ; yes                    ;
-; inst1[4]                                            ; inst4               ; yes                    ;
-; inst1[3]                                            ; inst4               ; yes                    ;
-; inst1[2]                                            ; inst4               ; yes                    ;
-; inst1[1]                                            ; inst4               ; yes                    ;
-; inst1[0]                                            ; inst4               ; yes                    ;
-; inst2[7]                                            ; inst5               ; yes                    ;
-; inst2[6]                                            ; inst5               ; yes                    ;
-; inst2[5]                                            ; inst5               ; yes                    ;
-; inst2[4]                                            ; inst5               ; yes                    ;
-; inst2[3]                                            ; inst5               ; yes                    ;
-; inst2[2]                                            ; inst5               ; yes                    ;
-; inst2[1]                                            ; inst5               ; yes                    ;
-; inst2[0]                                            ; inst5               ; yes                    ;
-; Number of user-specified and inferred latches = 24  ;                     ;                        ;
+; inst7[7]                                            ; inst10              ; yes                    ;
+; inst8[7]                                            ; inst11              ; yes                    ;
+; inst7[6]                                            ; inst10              ; yes                    ;
+; inst8[6]                                            ; inst11              ; yes                    ;
+; inst7[5]                                            ; inst10              ; yes                    ;
+; inst8[5]                                            ; inst11              ; yes                    ;
+; inst7[4]                                            ; inst10              ; yes                    ;
+; inst8[4]                                            ; inst11              ; yes                    ;
+; inst7[3]                                            ; inst10              ; yes                    ;
+; inst8[3]                                            ; inst11              ; yes                    ;
+; inst7[2]                                            ; inst10              ; yes                    ;
+; inst8[2]                                            ; inst11              ; yes                    ;
+; inst7[1]                                            ; inst10              ; yes                    ;
+; inst8[1]                                            ; inst11              ; yes                    ;
+; inst7[0]                                            ; inst10              ; yes                    ;
+; inst8[0]                                            ; inst11              ; yes                    ;
+; REG0_2:inst2|inst[7]                                ; REG0_2:inst2|inst3  ; yes                    ;
+; REG0_2:inst2|inst[6]                                ; REG0_2:inst2|inst3  ; yes                    ;
+; REG0_2:inst2|inst[5]                                ; REG0_2:inst2|inst3  ; yes                    ;
+; REG0_2:inst2|inst[4]                                ; REG0_2:inst2|inst3  ; yes                    ;
+; REG0_2:inst2|inst[3]                                ; REG0_2:inst2|inst3  ; yes                    ;
+; REG0_2:inst2|inst[2]                                ; REG0_2:inst2|inst3  ; yes                    ;
+; REG0_2:inst2|inst[1]                                ; REG0_2:inst2|inst3  ; yes                    ;
+; REG0_2:inst2|inst[0]                                ; REG0_2:inst2|inst3  ; yes                    ;
+; REG0_2:inst2|inst1[7]                               ; REG0_2:inst2|inst4  ; yes                    ;
+; REG0_2:inst2|inst1[6]                               ; REG0_2:inst2|inst4  ; yes                    ;
+; REG0_2:inst2|inst1[5]                               ; REG0_2:inst2|inst4  ; yes                    ;
+; REG0_2:inst2|inst1[4]                               ; REG0_2:inst2|inst4  ; yes                    ;
+; REG0_2:inst2|inst1[3]                               ; REG0_2:inst2|inst4  ; yes                    ;
+; REG0_2:inst2|inst1[2]                               ; REG0_2:inst2|inst4  ; yes                    ;
+; REG0_2:inst2|inst1[1]                               ; REG0_2:inst2|inst4  ; yes                    ;
+; REG0_2:inst2|inst1[0]                               ; REG0_2:inst2|inst4  ; yes                    ;
+; REG0_2:inst2|inst2[7]                               ; REG0_2:inst2|inst5  ; yes                    ;
+; REG0_2:inst2|inst2[6]                               ; REG0_2:inst2|inst5  ; yes                    ;
+; REG0_2:inst2|inst2[5]                               ; REG0_2:inst2|inst5  ; yes                    ;
+; REG0_2:inst2|inst2[4]                               ; REG0_2:inst2|inst5  ; yes                    ;
+; REG0_2:inst2|inst2[3]                               ; REG0_2:inst2|inst5  ; yes                    ;
+; REG0_2:inst2|inst2[2]                               ; REG0_2:inst2|inst5  ; yes                    ;
+; REG0_2:inst2|inst2[1]                               ; REG0_2:inst2|inst5  ; yes                    ;
+; REG0_2:inst2|inst2[0]                               ; REG0_2:inst2|inst5  ; yes                    ;
+; Number of user-specified and inferred latches = 40  ;                     ;                        ;
 +-----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
@@ -248,12 +273,21 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 
 
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 31:1               ; 8 bits    ; 160 LEs       ; 160 LEs              ; 0 LEs                  ; No         ; |ALU_MD|ALU181A:inst1|Mux1 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -263,7 +297,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Sun Jan 06 13:28:46 2019
+    Info: Processing started: Sun Jan 06 14:57:03 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off 8-bit-cpu -c 8-bit-cpu
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Warning (12019): Can't analyze file -- file MY_ALU.v is missing
@@ -289,18 +323,27 @@ Info (12021): Found 1 design units, including 1 entities, in source file ldr0_2.
     Info (12023): Found entity 1: LDR0_2
 Info (12021): Found 1 design units, including 1 entities, in source file reg0_2.bdf
     Info (12023): Found entity 1: REG0_2
-Info (12127): Elaborating entity "REG0_2" for the top level hierarchy
+Info (12021): Found 1 design units, including 1 entities, in source file alu_md.bdf
+    Info (12023): Found entity 1: ALU_MD
+Info (12127): Elaborating entity "ALU_MD" for the top level hierarchy
+Info (12128): Elaborating entity "ALU181A" for hierarchy "ALU181A:inst1"
+Warning (10235): Verilog HDL Always Construct warning at ALU181A.v(26): variable "F9" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Info (12128): Elaborating entity "REG0_2" for hierarchy "REG0_2:inst2"
+Info (12128): Elaborating entity "LDR0_2" for hierarchy "LDR0_2:inst"
+Info (12128): Elaborating entity "74139M" for hierarchy "LDR0_2:inst|74139M:21312"
+Info (12130): Elaborated megafunction instantiation "LDR0_2:inst|74139M:21312"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 63 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 12 input pins
-    Info (21059): Implemented 24 output pins
-    Info (21061): Implemented 27 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
+Info (21057): Implemented 525 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 27 input pins
+    Info (21059): Implemented 50 output pins
+    Info (21060): Implemented 8 bidirectional pins
+    Info (21061): Implemented 440 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 4686 megabytes
-    Info: Processing ended: Sun Jan 06 13:28:47 2019
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Processing ended: Sun Jan 06 14:57:06 2019
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 

@@ -9,8 +9,8 @@ entity LDR0_2 is
         LDR2            : out    vl_logic;
         LDR1            : out    vl_logic;
         R0_B            : out    vl_logic;
-        IR4             : in     vl_logic;
         IR3             : in     vl_logic;
+        IR2             : in     vl_logic;
         RS_B            : in     vl_logic;
         RD_B            : in     vl_logic;
         R1_B            : out    vl_logic;

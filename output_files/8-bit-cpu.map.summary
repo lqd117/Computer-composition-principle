@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Sun Jan 06 13:28:47 2019
+Analysis & Synthesis Status : Successful - Sun Jan 06 14:57:06 2019
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
 Revision Name : 8-bit-cpu
-Top-level Entity Name : REG0_2
+Top-level Entity Name : ALU_MD
 Family : Cyclone IV GX
-Total logic elements : 27
-    Total combinational functions : 27
+Total logic elements : 440
+    Total combinational functions : 440
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 36
+Total pins : 85
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

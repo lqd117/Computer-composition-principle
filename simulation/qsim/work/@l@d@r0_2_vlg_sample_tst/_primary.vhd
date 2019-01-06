@@ -4,8 +4,8 @@ entity LDR0_2_vlg_sample_tst is
     port(
         IR0             : in     vl_logic;
         IR1             : in     vl_logic;
+        IR2             : in     vl_logic;
         IR3             : in     vl_logic;
-        IR4             : in     vl_logic;
         LDRI            : in     vl_logic;
         RD_B            : in     vl_logic;
         RJ_B            : in     vl_logic;
