@@ -1,15 +1,15 @@
 -- Copyright (C) 1991-2013 Altera Corporation
--- Your use of Altera Corporation's design tools, logic functions
--- and other software and tools, and its AMPP partner logic
--- functions, and any output files from any of the foregoing
--- (including device programming or simulation files), and any
--- associated documentation or information are expressly subject
--- to the terms and conditions of the Altera Program License
--- Subscription Agreement, Altera MegaCore Function License
--- Agreement, or other applicable license agreement, including,
--- without limitation, that your use is for the sole purpose of
--- programming logic devices manufactured by Altera and sold by
--- Altera or its authorized distributors.  Please refer to the
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
 -- applicable agreement for further details.
 
 -- Quartus II generated Memory Initialization File (.mif)
@@ -21,31 +21,27 @@ ADDRESS_RADIX=OCT;
 DATA_RADIX=HEX;
 
 CONTENT BEGIN
-	000  :   018110;
+	000  :   014110;
 	001  :   01ED82;
 	002  :   00C048;
-	003  :   009001;
-	004  :   01B405;
-	005  :   618B41;
-	006  :   01B419;
-	007  :   018001;
+	[003..007]  :   000000;
 	010  :   001001;
-	011  :   01ED83;
-	012  :   01A204;
-	013  :   01ED95;
-	014  :   01A206;
-	015  :   01A416;
-	016  :   01ED98;
-	017  :   010401;
+	011  :   C99A01;
+	012  :   399A01;
+	013  :   01A401;
+	014  :   01B401;
+	015  :   6180C1;
+	016  :   919A01;
+	017  :   000000;
 	020  :   01ED94;
-	021  :   01ED8C;
-	022  :   002023;
-	023  :   008001;
+	021  :   01ED92;
+	022  :   000023;
+	023  :   018001;
 	024  :   00A024;
-	025  :   0180C7;
-	026  :   C9BA1A;
-	[027..030]  :   00D181;
-	031  :   919A01;
-	032  :   919B41;
-	[033..077]  :   000000;
+	[025..042]  :   000000;
+	043  :   038011;
+	044  :   010A10;
+	[045..060]  :   000000;
+	061  :   010413;
+	[062..077]  :   000000;
 END;

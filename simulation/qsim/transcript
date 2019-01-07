@@ -9,33 +9,33 @@
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module cpu_8bit_vlg_sample_tst
 # -- Compiling module cpu_8bit_vlg_check_tst
-# ** Warning: 8-bit-cpu.vt(2234): (vlog-2576) [BSOB] - Bit-select into 'M_expected_prev' is out of bounds.
+# ** Warning: 8-bit-cpu.vt(2202): (vlog-2576) [BSOB] - Bit-select into 'M_expected_prev' is out of bounds.
 # 
-# ** Warning: 8-bit-cpu.vt(2234): (vlog-2576) [BSOB] - Bit-select into 'M_prev' is out of bounds.
+# ** Warning: 8-bit-cpu.vt(2202): (vlog-2576) [BSOB] - Bit-select into 'M_prev' is out of bounds.
 # 
-# ** Warning: 8-bit-cpu.vt(2234): (vlog-2576) [BSOB] - Bit-select into 'M_expected_prev' is out of bounds.
+# ** Warning: 8-bit-cpu.vt(2202): (vlog-2576) [BSOB] - Bit-select into 'M_expected_prev' is out of bounds.
 # 
-# ** Warning: 8-bit-cpu.vt(2235): (vlog-2576) [BSOB] - Bit-select into 'M_expected_prev' is out of bounds.
+# ** Warning: 8-bit-cpu.vt(2203): (vlog-2576) [BSOB] - Bit-select into 'M_expected_prev' is out of bounds.
 # 
-# ** Warning: 8-bit-cpu.vt(2235): (vlog-2576) [BSOB] - Bit-select into 'last_M_exp' is out of bounds.
+# ** Warning: 8-bit-cpu.vt(2203): (vlog-2576) [BSOB] - Bit-select into 'last_M_exp' is out of bounds.
 # 
-# ** Warning: 8-bit-cpu.vt(2244): (vlog-2576) [BSOB] - Bit-select into 'last_M_exp' is out of bounds.
+# ** Warning: 8-bit-cpu.vt(2212): (vlog-2576) [BSOB] - Bit-select into 'last_M_exp' is out of bounds.
 # 
-# ** Warning: 8-bit-cpu.vt(2244): (vlog-2576) [BSOB] - Bit-select into 'M_expected_prev' is out of bounds.
+# ** Warning: 8-bit-cpu.vt(2212): (vlog-2576) [BSOB] - Bit-select into 'M_expected_prev' is out of bounds.
 # 
-# ** Warning: 8-bit-cpu.vt(3170): (vlog-2576) [BSOB] - Bit-select into 'SE_expected_prev' is out of bounds.
+# ** Warning: 8-bit-cpu.vt(3138): (vlog-2576) [BSOB] - Bit-select into 'SE_expected_prev' is out of bounds.
 # 
-# ** Warning: 8-bit-cpu.vt(3170): (vlog-2576) [BSOB] - Bit-select into 'SE_prev' is out of bounds.
+# ** Warning: 8-bit-cpu.vt(3138): (vlog-2576) [BSOB] - Bit-select into 'SE_prev' is out of bounds.
 # 
-# ** Warning: 8-bit-cpu.vt(3170): (vlog-2576) [BSOB] - Bit-select into 'SE_expected_prev' is out of bounds.
+# ** Warning: 8-bit-cpu.vt(3138): (vlog-2576) [BSOB] - Bit-select into 'SE_expected_prev' is out of bounds.
 # 
-# ** Warning: 8-bit-cpu.vt(3171): (vlog-2576) [BSOB] - Bit-select into 'SE_expected_prev' is out of bounds.
+# ** Warning: 8-bit-cpu.vt(3139): (vlog-2576) [BSOB] - Bit-select into 'SE_expected_prev' is out of bounds.
 # 
-# ** Warning: 8-bit-cpu.vt(3171): (vlog-2576) [BSOB] - Bit-select into 'last_SE_exp' is out of bounds.
+# ** Warning: 8-bit-cpu.vt(3139): (vlog-2576) [BSOB] - Bit-select into 'last_SE_exp' is out of bounds.
 # 
-# ** Warning: 8-bit-cpu.vt(3180): (vlog-2576) [BSOB] - Bit-select into 'last_SE_exp' is out of bounds.
+# ** Warning: 8-bit-cpu.vt(3148): (vlog-2576) [BSOB] - Bit-select into 'last_SE_exp' is out of bounds.
 # 
-# ** Warning: 8-bit-cpu.vt(3180): (vlog-2576) [BSOB] - Bit-select into 'SE_expected_prev' is out of bounds.
+# ** Warning: 8-bit-cpu.vt(3148): (vlog-2576) [BSOB] - Bit-select into 'SE_expected_prev' is out of bounds.
 # 
 # -- Compiling module cpu_8bit_vlg_vec_tst
 # 
@@ -57,45 +57,6 @@
 # Loading work.cpu_8bit_vlg_sample_tst
 # Loading work.cpu_8bit_vlg_check_tst
 # Loading altera_ver.PRIM_GDFF_LOW
-# ERROR! Vector Mismatch for output port M[4] :: @time = 1000000.000 ps
-#      Expected value = 000000000000000000000000
-#      Real value = 000000001100000001001000
-# ERROR! Vector Mismatch for output port M[7] :: @time = 1000000.000 ps
-#      Expected value = 000000000000000000000000
-#      Real value = 000000001100000001001000
-# ERROR! Vector Mismatch for output port M[15] :: @time = 1000000.000 ps
-#      Expected value = 000000000000000000000000
-#      Real value = 000000001100000001001000
-# ERROR! Vector Mismatch for output port M[16] :: @time = 1000000.000 ps
-#      Expected value = 000000000000000000000000
-#      Real value = 000000001100000001001000
-# ERROR! Vector Mismatch for output port M[1] :: @time = 1024000.000 ps
-#      Expected value = 000000000000000000000000
-#      Real value = 000000000001000000000001
-# ERROR! Vector Mismatch for output port M[13] :: @time = 1024000.000 ps
-#      Expected value = 000000000000000000000000
-#      Real value = 000000000001000000000001
-# ERROR! Vector Mismatch for output port M[2] :: @time = 1064000.000 ps
-#      Expected value = 000000000000000000000000
-#      Real value = 000000011110110110000010
-# ERROR! Vector Mismatch for output port M[8] :: @time = 1064000.000 ps
-#      Expected value = 000000000000000000000000
-#      Real value = 000000011110110110000010
-# ERROR! Vector Mismatch for output port M[9] :: @time = 1064000.000 ps
-#      Expected value = 000000000000000000000000
-#      Real value = 000000011110110110000010
-# ERROR! Vector Mismatch for output port M[11] :: @time = 1064000.000 ps
-#      Expected value = 000000000000000000000000
-#      Real value = 000000011110110110000010
-# ERROR! Vector Mismatch for output port M[12] :: @time = 1064000.000 ps
-#      Expected value = 000000000000000000000000
-#      Real value = 000000011110110110000010
-# ERROR! Vector Mismatch for output port M[14] :: @time = 1064000.000 ps
-#      Expected value = 000000000000000000000000
-#      Real value = 000000011110110110000010
-# ERROR! Vector Mismatch for output port M[17] :: @time = 1064000.000 ps
-#      Expected value = 000000000000000000000000
-#      Real value = 000000011110110110000010
-#          13 mismatched vectors : Simulation failed !
-# ** Note: $finish    : 8-bit-cpu.vt(3415)
-#    Time: 10 us  Iteration: 0  Instance: /cpu_8bit_vlg_vec_tst/tb_out
+# Simulation passed !
+# ** Note: $finish    : 8-bit-cpu.vt(3383)
+#    Time: 100 us  Iteration: 0  Instance: /cpu_8bit_vlg_vec_tst/tb_out
