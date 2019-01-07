@@ -35,6 +35,12 @@ entity cpu_8bit is
         SW_B            : out    vl_logic;
         \IN\            : in     vl_logic_vector(7 downto 0);
         SFT_B           : out    vl_logic;
+        LDR0            : out    vl_logic;
+        LDR1            : out    vl_logic;
+        LDR2            : out    vl_logic;
+        R0_B            : out    vl_logic;
+        R1_B            : out    vl_logic;
+        R2_B            : out    vl_logic;
         ALU             : out    vl_logic_vector(7 downto 0);
         DOUT            : out    vl_logic_vector(7 downto 0);
         DR1             : out    vl_logic_vector(7 downto 0);
@@ -43,6 +49,7 @@ entity cpu_8bit is
         R0              : out    vl_logic_vector(7 downto 0);
         R1              : out    vl_logic_vector(7 downto 0);
         R2              : out    vl_logic_vector(7 downto 0);
+        SE              : out    vl_logic_vector(6 downto 1);
         uA              : out    vl_logic_vector(5 downto 0)
     );
 end cpu_8bit;

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for 8-bit-cpu
-Sun Jan 06 23:03:57 2019
+Mon Jan 07 16:04:14 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -18,9 +18,9 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
  10. User-Specified and Inferred Latches
  11. General Register Statistics
  12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Source assignments for uPC:inst2|uP_ROM:inst6|altsyncram:altsyncram_component|altsyncram_gqb1:auto_generated
+ 13. Source assignments for uPC:inst6|uP_ROM:inst6|altsyncram:altsyncram_component|altsyncram_gqb1:auto_generated
  14. Source assignments for RAM8:inst3|altsyncram:altsyncram_component|altsyncram_r1k1:auto_generated
- 15. Parameter Settings for User Entity Instance: uPC:inst2|uP_ROM:inst6|altsyncram:altsyncram_component
+ 15. Parameter Settings for User Entity Instance: uPC:inst6|uP_ROM:inst6|altsyncram:altsyncram_component
  16. Parameter Settings for User Entity Instance: REGS_MD:inst4|lpm_latch0:inst1|LPM_LATCH:inst
  17. Parameter Settings for User Entity Instance: REGS_MD:inst4|counter:inst|lpm_counter:LPM_COUNTER_component
  18. Parameter Settings for User Entity Instance: REGS_MD:inst4|lpm_latch0:inst3|LPM_LATCH:inst
@@ -54,16 +54,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Jan 06 23:03:57 2019            ;
+; Analysis & Synthesis Status        ; Successful - Mon Jan 07 16:04:13 2019            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; 8-bit-cpu                                        ;
 ; Top-level Entity Name              ; cpu_8bit                                         ;
 ; Family                             ; Cyclone III                                      ;
-; Total logic elements               ; 562                                              ;
-;     Total combinational functions  ; 557                                              ;
+; Total logic elements               ; 566                                              ;
+;     Total combinational functions  ; 561                                              ;
 ;     Dedicated logic registers      ; 19                                               ;
 ; Total registers                    ; 19                                               ;
-; Total pins                         ; 161                                              ;
+; Total pins                         ; 173                                              ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 3,584                                            ;
 ; Embedded Multiplier 9-bit elements ; 0                                                ;
@@ -210,7 +210,7 @@ applicable agreement for further details.
 ; altram.inc                       ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc              ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc            ;         ;
 ; db/altsyncram_gqb1.tdf           ; yes             ; Auto-Generated Megafunction            ; F:/GitHub/Computer-composition-principle/db/altsyncram_gqb1.tdf           ;         ;
-; data24x6.mif                     ; yes             ; Auto-Found Memory Initialization File  ; F:/GitHub/Computer-composition-principle/data24x6.mif                     ;         ;
+; DATA24X6.mif                     ; yes             ; Auto-Found Memory Initialization File  ; F:/GitHub/Computer-composition-principle/DATA24X6.mif                     ;         ;
 ; 74138.bdf                        ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/others/maxplus2/74138.bdf             ;         ;
 ; lpm_latch.tdf                    ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_latch.tdf           ;         ;
 ; lpm_constant.inc                 ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_constant.inc        ;         ;
@@ -232,29 +232,29 @@ applicable agreement for further details.
 +---------------------------------------------+-----------------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                         ;
 +---------------------------------------------+-----------------------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 562                                                                                           ;
+; Estimated Total logic elements              ; 566                                                                                           ;
 ;                                             ;                                                                                               ;
-; Total combinational functions               ; 557                                                                                           ;
+; Total combinational functions               ; 561                                                                                           ;
 ; Logic element usage by number of LUT inputs ;                                                                                               ;
-;     -- 4 input functions                    ; 259                                                                                           ;
-;     -- 3 input functions                    ; 190                                                                                           ;
+;     -- 4 input functions                    ; 261                                                                                           ;
+;     -- 3 input functions                    ; 192                                                                                           ;
 ;     -- <=2 input functions                  ; 108                                                                                           ;
 ;                                             ;                                                                                               ;
 ; Logic elements by mode                      ;                                                                                               ;
-;     -- normal mode                          ; 430                                                                                           ;
+;     -- normal mode                          ; 434                                                                                           ;
 ;     -- arithmetic mode                      ; 127                                                                                           ;
 ;                                             ;                                                                                               ;
 ; Total registers                             ; 19                                                                                            ;
 ;     -- Dedicated logic registers            ; 19                                                                                            ;
 ;     -- I/O registers                        ; 0                                                                                             ;
 ;                                             ;                                                                                               ;
-; I/O pins                                    ; 161                                                                                           ;
+; I/O pins                                    ; 173                                                                                           ;
 ; Total memory bits                           ; 3584                                                                                          ;
 ; Embedded Multiplier 9-bit elements          ; 0                                                                                             ;
-; Maximum fan-out node                        ; uPC:inst2|uP_ROM:inst6|altsyncram:altsyncram_component|altsyncram_gqb1:auto_generated|q_a[20] ;
-; Maximum fan-out                             ; 86                                                                                            ;
-; Total fan-out                               ; 2439                                                                                          ;
-; Average fan-out                             ; 2.62                                                                                          ;
+; Maximum fan-out node                        ; uPC:inst6|uP_ROM:inst6|altsyncram:altsyncram_component|altsyncram_gqb1:auto_generated|q_a[20] ;
+; Maximum fan-out                             ; 85                                                                                            ;
+; Total fan-out                               ; 2476                                                                                          ;
+; Average fan-out                             ; 2.58                                                                                          ;
 +---------------------------------------------+-----------------------------------------------------------------------------------------------+
 
 
@@ -263,13 +263,14 @@ applicable agreement for further details.
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                             ; Library Name ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------+--------------+
-; |cpu_8bit                                    ; 557 (53)          ; 19 (0)       ; 3584        ; 0            ; 0       ; 0         ; 161  ; 0            ; |cpu_8bit                                                                                       ; work         ;
-;    |ALU_MD:inst|                             ; 418 (20)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|ALU_MD:inst                                                                           ; work         ;
-;       |ALU181A:inst1|                        ; 364 (364)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|ALU_MD:inst|ALU181A:inst1                                                             ; work         ;
-;       |LDR0_2:inst|                          ; 7 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|ALU_MD:inst|LDR0_2:inst                                                               ; work         ;
-;          |74139m:ins123t2|                   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|ALU_MD:inst|LDR0_2:inst|74139m:ins123t2                                               ; work         ;
-;          |74139m:inst1|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|ALU_MD:inst|LDR0_2:inst|74139m:inst1                                                  ; work         ;
-;       |REG0_2:inst2|                         ; 27 (27)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|ALU_MD:inst|REG0_2:inst2                                                              ; work         ;
+; |cpu_8bit                                    ; 561 (54)          ; 19 (0)       ; 3584        ; 0            ; 0       ; 0         ; 173  ; 0            ; |cpu_8bit                                                                                       ; work         ;
+;    |ALU_MD:inst7|                            ; 421 (20)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|ALU_MD:inst7                                                                          ; work         ;
+;       |ALU181A:inst1|                        ; 364 (364)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|ALU_MD:inst7|ALU181A:inst1                                                            ; work         ;
+;       |LDR0_2:inst|                          ; 10 (3)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|ALU_MD:inst7|LDR0_2:inst                                                              ; work         ;
+;          |74139m:21312|                      ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|ALU_MD:inst7|LDR0_2:inst|74139m:21312                                                 ; work         ;
+;          |74139m:ins123t2|                   ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|ALU_MD:inst7|LDR0_2:inst|74139m:ins123t2                                              ; work         ;
+;          |74139m:inst1|                      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|ALU_MD:inst7|LDR0_2:inst|74139m:inst1                                                 ; work         ;
+;       |REG0_2:inst2|                         ; 27 (27)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|ALU_MD:inst7|REG0_2:inst2                                                             ; work         ;
 ;    |RAM8:inst3|                              ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|RAM8:inst3                                                                            ; work         ;
 ;       |altsyncram:altsyncram_component|      ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|RAM8:inst3|altsyncram:altsyncram_component                                            ; work         ;
 ;          |altsyncram_r1k1:auto_generated|    ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|RAM8:inst3|altsyncram:altsyncram_component|altsyncram_r1k1:auto_generated             ; work         ;
@@ -284,20 +285,20 @@ applicable agreement for further details.
 ;       |lpm_latch0:inst3|                     ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|REGS_MD:inst4|lpm_latch0:inst3                                                        ; work         ;
 ;          |lpm_latch:inst|                    ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|REGS_MD:inst4|lpm_latch0:inst3|lpm_latch:inst                                         ; work         ;
 ;    |STEP:inst1|                              ; 3 (3)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|STEP:inst1                                                                            ; work         ;
-;    |uPC:inst2|                               ; 47 (0)            ; 6 (0)        ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|uPC:inst2                                                                             ; work         ;
-;       |decoder_A:inst2|                      ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|uPC:inst2|decoder_A:inst2                                                             ; work         ;
-;          |74138:inst|                        ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|uPC:inst2|decoder_A:inst2|74138:inst                                                  ; work         ;
-;       |decoder_B:inst3|                      ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|uPC:inst2|decoder_B:inst3                                                             ; work         ;
-;          |74138:decoder_B_1|                 ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|uPC:inst2|decoder_B:inst3|74138:decoder_B_1                                           ; work         ;
-;       |decoder_C:inst4|                      ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|uPC:inst2|decoder_C:inst4                                                             ; work         ;
-;          |74138:decoder_C_1|                 ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|uPC:inst2|decoder_C:inst4|74138:decoder_C_1                                           ; work         ;
-;       |decoder_D:inst5|                      ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|uPC:inst2|decoder_D:inst5                                                             ; work         ;
-;          |74139m:inst|                       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|uPC:inst2|decoder_D:inst5|74139m:inst                                                 ; work         ;
-;       |uA_reg:inst9|                         ; 20 (20)           ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|uPC:inst2|uA_reg:inst9                                                                ; work         ;
-;       |uI_C:123|                             ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|uPC:inst2|uI_C:123                                                                    ; work         ;
-;       |uP_ROM:inst6|                         ; 0 (0)             ; 0 (0)        ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|uPC:inst2|uP_ROM:inst6                                                                ; work         ;
-;          |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|uPC:inst2|uP_ROM:inst6|altsyncram:altsyncram_component                                ; work         ;
-;             |altsyncram_gqb1:auto_generated| ; 0 (0)             ; 0 (0)        ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|uPC:inst2|uP_ROM:inst6|altsyncram:altsyncram_component|altsyncram_gqb1:auto_generated ; work         ;
+;    |uPC:inst6|                               ; 47 (0)            ; 6 (0)        ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|uPC:inst6                                                                             ; work         ;
+;       |decoder_A:inst2|                      ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|uPC:inst6|decoder_A:inst2                                                             ; work         ;
+;          |74138:inst|                        ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|uPC:inst6|decoder_A:inst2|74138:inst                                                  ; work         ;
+;       |decoder_B:inst3|                      ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|uPC:inst6|decoder_B:inst3                                                             ; work         ;
+;          |74138:decoder_B_1|                 ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|uPC:inst6|decoder_B:inst3|74138:decoder_B_1                                           ; work         ;
+;       |decoder_C:inst12|                     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|uPC:inst6|decoder_C:inst12                                                            ; work         ;
+;          |74138:decoder_C_1|                 ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|uPC:inst6|decoder_C:inst12|74138:decoder_C_1                                          ; work         ;
+;       |decoder_D:inst5|                      ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|uPC:inst6|decoder_D:inst5                                                             ; work         ;
+;          |74139m:inst|                       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|uPC:inst6|decoder_D:inst5|74139m:inst                                                 ; work         ;
+;       |uA_reg:inst9|                         ; 20 (20)           ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|uPC:inst6|uA_reg:inst9                                                                ; work         ;
+;       |uI_C:inst11|                          ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|uPC:inst6|uI_C:inst11                                                                 ; work         ;
+;       |uP_ROM:inst6|                         ; 0 (0)             ; 0 (0)        ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|uPC:inst6|uP_ROM:inst6                                                                ; work         ;
+;          |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|uPC:inst6|uP_ROM:inst6|altsyncram:altsyncram_component                                ; work         ;
+;             |altsyncram_gqb1:auto_generated| ; 0 (0)             ; 0 (0)        ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_8bit|uPC:inst6|uP_ROM:inst6|altsyncram:altsyncram_component|altsyncram_gqb1:auto_generated ; work         ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -308,7 +309,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                                                                             ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF          ;
 +--------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+--------------+
 ; RAM8:inst3|altsyncram:altsyncram_component|altsyncram_r1k1:auto_generated|ALTSYNCRAM             ; M9K  ; Single Port ; 256          ; 8            ; --           ; --           ; 2048 ; DATA8X8.mif  ;
-; uPC:inst2|uP_ROM:inst6|altsyncram:altsyncram_component|altsyncram_gqb1:auto_generated|ALTSYNCRAM ; M9K  ; ROM         ; 64           ; 24           ; --           ; --           ; 1536 ; DATA24X6.mif ;
+; uPC:inst6|uP_ROM:inst6|altsyncram:altsyncram_component|altsyncram_gqb1:auto_generated|ALTSYNCRAM ; M9K  ; ROM         ; 64           ; 24           ; --           ; --           ; 1536 ; DATA24X6.mif ;
 +--------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+------+--------------+
 
 
@@ -317,83 +318,83 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+--------------------------------------+----------------------------------------------------+
 ; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                      ; IP Include File                                    ;
 +--------+--------------+---------+--------------+--------------+--------------------------------------+----------------------------------------------------+
-; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |cpu_8bit|uPC:inst2|uP_ROM:inst6     ; F:/GitHub/Computer-composition-principle/uP_ROM.v  ;
 ; Altera ; RAM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |cpu_8bit|RAM8:inst3                 ; F:/GitHub/Computer-composition-principle/RAM8.v    ;
 ; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |cpu_8bit|REGS_MD:inst4|counter:inst ; F:/GitHub/Computer-composition-principle/counter.v ;
+; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |cpu_8bit|uPC:inst6|uP_ROM:inst6     ; F:/GitHub/Computer-composition-principle/uP_ROM.v  ;
 +--------+--------------+---------+--------------+--------------+--------------------------------------+----------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                                ;
-+----------------------------------------------------------+--------------------------------+------------------------+
-; Latch Name                                               ; Latch Enable Signal            ; Free of Timing Hazards ;
-+----------------------------------------------------------+--------------------------------+------------------------+
-; ALU_MD:inst|inst7[7]                                     ; ALU_MD:inst|inst10             ; yes                    ;
-; ALU_MD:inst|inst8[7]                                     ; ALU_MD:inst|inst11             ; yes                    ;
-; ALU_MD:inst|inst7[6]                                     ; ALU_MD:inst|inst10             ; yes                    ;
-; ALU_MD:inst|inst8[6]                                     ; ALU_MD:inst|inst11             ; yes                    ;
-; ALU_MD:inst|inst7[5]                                     ; ALU_MD:inst|inst10             ; yes                    ;
-; ALU_MD:inst|inst8[5]                                     ; ALU_MD:inst|inst11             ; yes                    ;
-; ALU_MD:inst|inst7[4]                                     ; ALU_MD:inst|inst10             ; yes                    ;
-; ALU_MD:inst|inst8[4]                                     ; ALU_MD:inst|inst11             ; yes                    ;
-; ALU_MD:inst|inst7[3]                                     ; ALU_MD:inst|inst10             ; yes                    ;
-; ALU_MD:inst|inst8[3]                                     ; ALU_MD:inst|inst11             ; yes                    ;
-; ALU_MD:inst|inst7[2]                                     ; ALU_MD:inst|inst10             ; yes                    ;
-; ALU_MD:inst|inst8[2]                                     ; ALU_MD:inst|inst11             ; yes                    ;
-; ALU_MD:inst|inst7[1]                                     ; ALU_MD:inst|inst10             ; yes                    ;
-; ALU_MD:inst|inst8[1]                                     ; ALU_MD:inst|inst11             ; yes                    ;
-; ALU_MD:inst|inst7[0]                                     ; ALU_MD:inst|inst10             ; yes                    ;
-; ALU_MD:inst|inst8[0]                                     ; ALU_MD:inst|inst11             ; yes                    ;
-; REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[7] ; REGS_MD:inst4|inst7            ; yes                    ;
-; REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[6] ; REGS_MD:inst4|inst7            ; yes                    ;
-; REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[5] ; REGS_MD:inst4|inst7            ; yes                    ;
-; REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[4] ; REGS_MD:inst4|inst7            ; yes                    ;
-; REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[3] ; REGS_MD:inst4|inst7            ; yes                    ;
-; REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[2] ; REGS_MD:inst4|inst7            ; yes                    ;
-; REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[1] ; REGS_MD:inst4|inst7            ; yes                    ;
-; REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[0] ; REGS_MD:inst4|inst7            ; yes                    ;
-; REGS_MD:inst4|lpm_latch0:inst1|lpm_latch:inst|latches[7] ; REGS_MD:inst4|inst6            ; yes                    ;
-; REGS_MD:inst4|lpm_latch0:inst1|lpm_latch:inst|latches[6] ; REGS_MD:inst4|inst6            ; yes                    ;
-; REGS_MD:inst4|lpm_latch0:inst1|lpm_latch:inst|latches[5] ; REGS_MD:inst4|inst6            ; yes                    ;
-; REGS_MD:inst4|lpm_latch0:inst1|lpm_latch:inst|latches[4] ; REGS_MD:inst4|inst6            ; yes                    ;
-; REGS_MD:inst4|lpm_latch0:inst1|lpm_latch:inst|latches[3] ; REGS_MD:inst4|inst6            ; yes                    ;
-; REGS_MD:inst4|lpm_latch0:inst1|lpm_latch:inst|latches[2] ; REGS_MD:inst4|inst6            ; yes                    ;
-; REGS_MD:inst4|lpm_latch0:inst1|lpm_latch:inst|latches[1] ; REGS_MD:inst4|inst6            ; yes                    ;
-; REGS_MD:inst4|lpm_latch0:inst1|lpm_latch:inst|latches[0] ; REGS_MD:inst4|inst6            ; yes                    ;
-; REGS_MD:inst4|lpm_latch0:inst3|lpm_latch:inst|latches[7] ; REGS_MD:inst4|inst9            ; yes                    ;
-; REGS_MD:inst4|lpm_latch0:inst3|lpm_latch:inst|latches[6] ; REGS_MD:inst4|inst9            ; yes                    ;
-; REGS_MD:inst4|lpm_latch0:inst3|lpm_latch:inst|latches[5] ; REGS_MD:inst4|inst9            ; yes                    ;
-; REGS_MD:inst4|lpm_latch0:inst3|lpm_latch:inst|latches[4] ; REGS_MD:inst4|inst9            ; yes                    ;
-; REGS_MD:inst4|lpm_latch0:inst3|lpm_latch:inst|latches[3] ; REGS_MD:inst4|inst9            ; yes                    ;
-; REGS_MD:inst4|lpm_latch0:inst3|lpm_latch:inst|latches[2] ; REGS_MD:inst4|inst9            ; yes                    ;
-; REGS_MD:inst4|lpm_latch0:inst3|lpm_latch:inst|latches[1] ; REGS_MD:inst4|inst9            ; yes                    ;
-; REGS_MD:inst4|lpm_latch0:inst3|lpm_latch:inst|latches[0] ; REGS_MD:inst4|inst9            ; yes                    ;
-; ALU_MD:inst|REG0_2:inst2|inst[7]                         ; ALU_MD:inst|REG0_2:inst2|inst3 ; yes                    ;
-; ALU_MD:inst|REG0_2:inst2|inst[6]                         ; ALU_MD:inst|REG0_2:inst2|inst3 ; yes                    ;
-; ALU_MD:inst|REG0_2:inst2|inst[5]                         ; ALU_MD:inst|REG0_2:inst2|inst3 ; yes                    ;
-; ALU_MD:inst|REG0_2:inst2|inst[4]                         ; ALU_MD:inst|REG0_2:inst2|inst3 ; yes                    ;
-; ALU_MD:inst|REG0_2:inst2|inst[3]                         ; ALU_MD:inst|REG0_2:inst2|inst3 ; yes                    ;
-; ALU_MD:inst|REG0_2:inst2|inst[2]                         ; ALU_MD:inst|REG0_2:inst2|inst3 ; yes                    ;
-; ALU_MD:inst|REG0_2:inst2|inst[1]                         ; ALU_MD:inst|REG0_2:inst2|inst3 ; yes                    ;
-; ALU_MD:inst|REG0_2:inst2|inst[0]                         ; ALU_MD:inst|REG0_2:inst2|inst3 ; yes                    ;
-; ALU_MD:inst|REG0_2:inst2|inst1[7]                        ; ALU_MD:inst|REG0_2:inst2|inst4 ; yes                    ;
-; ALU_MD:inst|REG0_2:inst2|inst1[6]                        ; ALU_MD:inst|REG0_2:inst2|inst4 ; yes                    ;
-; ALU_MD:inst|REG0_2:inst2|inst1[5]                        ; ALU_MD:inst|REG0_2:inst2|inst4 ; yes                    ;
-; ALU_MD:inst|REG0_2:inst2|inst1[4]                        ; ALU_MD:inst|REG0_2:inst2|inst4 ; yes                    ;
-; ALU_MD:inst|REG0_2:inst2|inst1[3]                        ; ALU_MD:inst|REG0_2:inst2|inst4 ; yes                    ;
-; ALU_MD:inst|REG0_2:inst2|inst1[2]                        ; ALU_MD:inst|REG0_2:inst2|inst4 ; yes                    ;
-; ALU_MD:inst|REG0_2:inst2|inst1[1]                        ; ALU_MD:inst|REG0_2:inst2|inst4 ; yes                    ;
-; ALU_MD:inst|REG0_2:inst2|inst1[0]                        ; ALU_MD:inst|REG0_2:inst2|inst4 ; yes                    ;
-; ALU_MD:inst|REG0_2:inst2|inst2[7]                        ; ALU_MD:inst|REG0_2:inst2|inst5 ; yes                    ;
-; ALU_MD:inst|REG0_2:inst2|inst2[6]                        ; ALU_MD:inst|REG0_2:inst2|inst5 ; yes                    ;
-; ALU_MD:inst|REG0_2:inst2|inst2[5]                        ; ALU_MD:inst|REG0_2:inst2|inst5 ; yes                    ;
-; ALU_MD:inst|REG0_2:inst2|inst2[4]                        ; ALU_MD:inst|REG0_2:inst2|inst5 ; yes                    ;
-; ALU_MD:inst|REG0_2:inst2|inst2[3]                        ; ALU_MD:inst|REG0_2:inst2|inst5 ; yes                    ;
-; ALU_MD:inst|REG0_2:inst2|inst2[2]                        ; ALU_MD:inst|REG0_2:inst2|inst5 ; yes                    ;
-; ALU_MD:inst|REG0_2:inst2|inst2[1]                        ; ALU_MD:inst|REG0_2:inst2|inst5 ; yes                    ;
-; ALU_MD:inst|REG0_2:inst2|inst2[0]                        ; ALU_MD:inst|REG0_2:inst2|inst5 ; yes                    ;
-; Number of user-specified and inferred latches = 64       ;                                ;                        ;
-+----------------------------------------------------------+--------------------------------+------------------------+
++---------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                 ;
++----------------------------------------------------------+---------------------------------+------------------------+
+; Latch Name                                               ; Latch Enable Signal             ; Free of Timing Hazards ;
++----------------------------------------------------------+---------------------------------+------------------------+
+; ALU_MD:inst7|inst7[7]                                    ; ALU_MD:inst7|inst10             ; yes                    ;
+; ALU_MD:inst7|inst8[7]                                    ; ALU_MD:inst7|inst11             ; yes                    ;
+; ALU_MD:inst7|inst7[6]                                    ; ALU_MD:inst7|inst10             ; yes                    ;
+; ALU_MD:inst7|inst8[6]                                    ; ALU_MD:inst7|inst11             ; yes                    ;
+; ALU_MD:inst7|inst7[5]                                    ; ALU_MD:inst7|inst10             ; yes                    ;
+; ALU_MD:inst7|inst8[5]                                    ; ALU_MD:inst7|inst11             ; yes                    ;
+; ALU_MD:inst7|inst7[4]                                    ; ALU_MD:inst7|inst10             ; yes                    ;
+; ALU_MD:inst7|inst8[4]                                    ; ALU_MD:inst7|inst11             ; yes                    ;
+; ALU_MD:inst7|inst7[3]                                    ; ALU_MD:inst7|inst10             ; yes                    ;
+; ALU_MD:inst7|inst8[3]                                    ; ALU_MD:inst7|inst11             ; yes                    ;
+; ALU_MD:inst7|inst7[2]                                    ; ALU_MD:inst7|inst10             ; yes                    ;
+; ALU_MD:inst7|inst8[2]                                    ; ALU_MD:inst7|inst11             ; yes                    ;
+; ALU_MD:inst7|inst7[1]                                    ; ALU_MD:inst7|inst10             ; yes                    ;
+; ALU_MD:inst7|inst8[1]                                    ; ALU_MD:inst7|inst11             ; yes                    ;
+; ALU_MD:inst7|inst7[0]                                    ; ALU_MD:inst7|inst10             ; yes                    ;
+; ALU_MD:inst7|inst8[0]                                    ; ALU_MD:inst7|inst11             ; yes                    ;
+; REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[7] ; REGS_MD:inst4|inst7             ; yes                    ;
+; REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[6] ; REGS_MD:inst4|inst7             ; yes                    ;
+; REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[5] ; REGS_MD:inst4|inst7             ; yes                    ;
+; REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[4] ; REGS_MD:inst4|inst7             ; yes                    ;
+; REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[3] ; REGS_MD:inst4|inst7             ; yes                    ;
+; REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[2] ; REGS_MD:inst4|inst7             ; yes                    ;
+; REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[1] ; REGS_MD:inst4|inst7             ; yes                    ;
+; REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[0] ; REGS_MD:inst4|inst7             ; yes                    ;
+; REGS_MD:inst4|lpm_latch0:inst1|lpm_latch:inst|latches[7] ; REGS_MD:inst4|inst6             ; yes                    ;
+; REGS_MD:inst4|lpm_latch0:inst1|lpm_latch:inst|latches[6] ; REGS_MD:inst4|inst6             ; yes                    ;
+; REGS_MD:inst4|lpm_latch0:inst1|lpm_latch:inst|latches[5] ; REGS_MD:inst4|inst6             ; yes                    ;
+; REGS_MD:inst4|lpm_latch0:inst1|lpm_latch:inst|latches[4] ; REGS_MD:inst4|inst6             ; yes                    ;
+; REGS_MD:inst4|lpm_latch0:inst1|lpm_latch:inst|latches[3] ; REGS_MD:inst4|inst6             ; yes                    ;
+; REGS_MD:inst4|lpm_latch0:inst1|lpm_latch:inst|latches[2] ; REGS_MD:inst4|inst6             ; yes                    ;
+; REGS_MD:inst4|lpm_latch0:inst1|lpm_latch:inst|latches[1] ; REGS_MD:inst4|inst6             ; yes                    ;
+; REGS_MD:inst4|lpm_latch0:inst1|lpm_latch:inst|latches[0] ; REGS_MD:inst4|inst6             ; yes                    ;
+; REGS_MD:inst4|lpm_latch0:inst3|lpm_latch:inst|latches[7] ; REGS_MD:inst4|inst9             ; yes                    ;
+; REGS_MD:inst4|lpm_latch0:inst3|lpm_latch:inst|latches[6] ; REGS_MD:inst4|inst9             ; yes                    ;
+; REGS_MD:inst4|lpm_latch0:inst3|lpm_latch:inst|latches[5] ; REGS_MD:inst4|inst9             ; yes                    ;
+; REGS_MD:inst4|lpm_latch0:inst3|lpm_latch:inst|latches[4] ; REGS_MD:inst4|inst9             ; yes                    ;
+; REGS_MD:inst4|lpm_latch0:inst3|lpm_latch:inst|latches[3] ; REGS_MD:inst4|inst9             ; yes                    ;
+; REGS_MD:inst4|lpm_latch0:inst3|lpm_latch:inst|latches[2] ; REGS_MD:inst4|inst9             ; yes                    ;
+; REGS_MD:inst4|lpm_latch0:inst3|lpm_latch:inst|latches[1] ; REGS_MD:inst4|inst9             ; yes                    ;
+; REGS_MD:inst4|lpm_latch0:inst3|lpm_latch:inst|latches[0] ; REGS_MD:inst4|inst9             ; yes                    ;
+; ALU_MD:inst7|REG0_2:inst2|inst[7]                        ; ALU_MD:inst7|REG0_2:inst2|inst3 ; yes                    ;
+; ALU_MD:inst7|REG0_2:inst2|inst[6]                        ; ALU_MD:inst7|REG0_2:inst2|inst3 ; yes                    ;
+; ALU_MD:inst7|REG0_2:inst2|inst[5]                        ; ALU_MD:inst7|REG0_2:inst2|inst3 ; yes                    ;
+; ALU_MD:inst7|REG0_2:inst2|inst[4]                        ; ALU_MD:inst7|REG0_2:inst2|inst3 ; yes                    ;
+; ALU_MD:inst7|REG0_2:inst2|inst[3]                        ; ALU_MD:inst7|REG0_2:inst2|inst3 ; yes                    ;
+; ALU_MD:inst7|REG0_2:inst2|inst[2]                        ; ALU_MD:inst7|REG0_2:inst2|inst3 ; yes                    ;
+; ALU_MD:inst7|REG0_2:inst2|inst[1]                        ; ALU_MD:inst7|REG0_2:inst2|inst3 ; yes                    ;
+; ALU_MD:inst7|REG0_2:inst2|inst[0]                        ; ALU_MD:inst7|REG0_2:inst2|inst3 ; yes                    ;
+; ALU_MD:inst7|REG0_2:inst2|inst1[7]                       ; ALU_MD:inst7|REG0_2:inst2|inst4 ; yes                    ;
+; ALU_MD:inst7|REG0_2:inst2|inst1[6]                       ; ALU_MD:inst7|REG0_2:inst2|inst4 ; yes                    ;
+; ALU_MD:inst7|REG0_2:inst2|inst1[5]                       ; ALU_MD:inst7|REG0_2:inst2|inst4 ; yes                    ;
+; ALU_MD:inst7|REG0_2:inst2|inst1[4]                       ; ALU_MD:inst7|REG0_2:inst2|inst4 ; yes                    ;
+; ALU_MD:inst7|REG0_2:inst2|inst1[3]                       ; ALU_MD:inst7|REG0_2:inst2|inst4 ; yes                    ;
+; ALU_MD:inst7|REG0_2:inst2|inst1[2]                       ; ALU_MD:inst7|REG0_2:inst2|inst4 ; yes                    ;
+; ALU_MD:inst7|REG0_2:inst2|inst1[1]                       ; ALU_MD:inst7|REG0_2:inst2|inst4 ; yes                    ;
+; ALU_MD:inst7|REG0_2:inst2|inst1[0]                       ; ALU_MD:inst7|REG0_2:inst2|inst4 ; yes                    ;
+; ALU_MD:inst7|REG0_2:inst2|inst2[7]                       ; ALU_MD:inst7|REG0_2:inst2|inst5 ; yes                    ;
+; ALU_MD:inst7|REG0_2:inst2|inst2[6]                       ; ALU_MD:inst7|REG0_2:inst2|inst5 ; yes                    ;
+; ALU_MD:inst7|REG0_2:inst2|inst2[5]                       ; ALU_MD:inst7|REG0_2:inst2|inst5 ; yes                    ;
+; ALU_MD:inst7|REG0_2:inst2|inst2[4]                       ; ALU_MD:inst7|REG0_2:inst2|inst5 ; yes                    ;
+; ALU_MD:inst7|REG0_2:inst2|inst2[3]                       ; ALU_MD:inst7|REG0_2:inst2|inst5 ; yes                    ;
+; ALU_MD:inst7|REG0_2:inst2|inst2[2]                       ; ALU_MD:inst7|REG0_2:inst2|inst5 ; yes                    ;
+; ALU_MD:inst7|REG0_2:inst2|inst2[1]                       ; ALU_MD:inst7|REG0_2:inst2|inst5 ; yes                    ;
+; ALU_MD:inst7|REG0_2:inst2|inst2[0]                       ; ALU_MD:inst7|REG0_2:inst2|inst5 ; yes                    ;
+; Number of user-specified and inferred latches = 64       ;                                 ;                        ;
++----------------------------------------------------------+---------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
@@ -412,17 +413,17 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output               ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
-; 31:1               ; 8 bits    ; 160 LEs       ; 160 LEs              ; 0 LEs                  ; No         ; |cpu_8bit|ALU_MD:inst|ALU181A:inst1|Mux1 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
+; 31:1               ; 8 bits    ; 160 LEs       ; 160 LEs              ; 0 LEs                  ; No         ; |cpu_8bit|ALU_MD:inst7|ALU181A:inst1|Mux1 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------+
-; Source assignments for uPC:inst2|uP_ROM:inst6|altsyncram:altsyncram_component|altsyncram_gqb1:auto_generated ;
+; Source assignments for uPC:inst6|uP_ROM:inst6|altsyncram:altsyncram_component|altsyncram_gqb1:auto_generated ;
 +---------------------------------+--------------------+------+------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                             ;
 +---------------------------------+--------------------+------+------------------------------------------------+
@@ -440,7 +441,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 
 
 +-----------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: uPC:inst2|uP_ROM:inst6|altsyncram:altsyncram_component ;
+; Parameter Settings for User Entity Instance: uPC:inst6|uP_ROM:inst6|altsyncram:altsyncram_component ;
 +------------------------------------+----------------------+-----------------------------------------+
 ; Parameter Name                     ; Value                ; Type                                    ;
 +------------------------------------+----------------------+-----------------------------------------+
@@ -627,7 +628,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Name                                      ; Value                                                  ;
 +-------------------------------------------+--------------------------------------------------------+
 ; Number of entity instances                ; 2                                                      ;
-; Entity Instance                           ; uPC:inst2|uP_ROM:inst6|altsyncram:altsyncram_component ;
+; Entity Instance                           ; uPC:inst6|uP_ROM:inst6|altsyncram:altsyncram_component ;
 ;     -- OPERATION_MODE                     ; ROM                                                    ;
 ;     -- WIDTH_A                            ; 24                                                     ;
 ;     -- NUMWORDS_A                         ; 64                                                     ;
@@ -667,7 +668,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Sun Jan 06 23:03:53 2019
+    Info: Processing started: Mon Jan 07 16:04:10 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off 8-bit-cpu -c 8-bit-cpu
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Warning (12019): Can't analyze file -- file MY_ALU.v is missing
@@ -718,18 +719,20 @@ Info (12021): Found 1 design units, including 1 entities, in source file ram8.v
 Info (12021): Found 1 design units, including 1 entities, in source file cpu_8bit.bdf
     Info (12023): Found entity 1: cpu_8bit
 Info (12127): Elaborating entity "cpu_8bit" for the top level hierarchy
-Info (12128): Elaborating entity "ALU_MD" for hierarchy "ALU_MD:inst"
-Info (12128): Elaborating entity "ALU181A" for hierarchy "ALU_MD:inst|ALU181A:inst1"
-Info (12128): Elaborating entity "REG0_2" for hierarchy "ALU_MD:inst|REG0_2:inst2"
-Info (12128): Elaborating entity "LDR0_2" for hierarchy "ALU_MD:inst|LDR0_2:inst"
-Info (12128): Elaborating entity "74139M" for hierarchy "ALU_MD:inst|LDR0_2:inst|74139M:21312"
-Info (12130): Elaborated megafunction instantiation "ALU_MD:inst|LDR0_2:inst|74139M:21312"
-Info (12128): Elaborating entity "uPC" for hierarchy "uPC:inst2"
-Info (12128): Elaborating entity "decoder_D" for hierarchy "uPC:inst2|decoder_D:inst5"
-Info (12128): Elaborating entity "uP_ROM" for hierarchy "uPC:inst2|uP_ROM:inst6"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "uPC:inst2|uP_ROM:inst6|altsyncram:altsyncram_component"
-Info (12130): Elaborated megafunction instantiation "uPC:inst2|uP_ROM:inst6|altsyncram:altsyncram_component"
-Info (12133): Instantiated megafunction "uPC:inst2|uP_ROM:inst6|altsyncram:altsyncram_component" with the following parameter:
+Info (12128): Elaborating entity "ALU_MD" for hierarchy "ALU_MD:inst7"
+Info (12128): Elaborating entity "ALU181A" for hierarchy "ALU_MD:inst7|ALU181A:inst1"
+Warning (10235): Verilog HDL Always Construct warning at ALU181A.v(26): variable "F9" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Info (12128): Elaborating entity "LDR0_2" for hierarchy "ALU_MD:inst7|LDR0_2:inst"
+Warning (275011): Block or symbol "NOT" of instance "inst8" overlaps another block or symbol
+Info (12128): Elaborating entity "74139M" for hierarchy "ALU_MD:inst7|LDR0_2:inst|74139M:21312"
+Info (12130): Elaborated megafunction instantiation "ALU_MD:inst7|LDR0_2:inst|74139M:21312"
+Info (12128): Elaborating entity "REG0_2" for hierarchy "ALU_MD:inst7|REG0_2:inst2"
+Info (12128): Elaborating entity "uPC" for hierarchy "uPC:inst6"
+Info (12128): Elaborating entity "decoder_D" for hierarchy "uPC:inst6|decoder_D:inst5"
+Info (12128): Elaborating entity "uP_ROM" for hierarchy "uPC:inst6|uP_ROM:inst6"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "uPC:inst6|uP_ROM:inst6|altsyncram:altsyncram_component"
+Info (12130): Elaborated megafunction instantiation "uPC:inst6|uP_ROM:inst6|altsyncram:altsyncram_component"
+Info (12133): Instantiated megafunction "uPC:inst6|uP_ROM:inst6|altsyncram:altsyncram_component" with the following parameter:
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -747,14 +750,14 @@ Info (12133): Instantiated megafunction "uPC:inst2|uP_ROM:inst6|altsyncram:altsy
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_gqb1.tdf
     Info (12023): Found entity 1: altsyncram_gqb1
-Info (12128): Elaborating entity "altsyncram_gqb1" for hierarchy "uPC:inst2|uP_ROM:inst6|altsyncram:altsyncram_component|altsyncram_gqb1:auto_generated"
-Info (12128): Elaborating entity "uA_reg" for hierarchy "uPC:inst2|uA_reg:inst9"
-Info (12128): Elaborating entity "uI_C" for hierarchy "uPC:inst2|uI_C:123"
-Info (12128): Elaborating entity "decoder_C" for hierarchy "uPC:inst2|decoder_C:inst4"
-Info (12128): Elaborating entity "74138" for hierarchy "uPC:inst2|decoder_C:inst4|74138:decoder_C_1"
-Info (12130): Elaborated megafunction instantiation "uPC:inst2|decoder_C:inst4|74138:decoder_C_1"
-Info (12128): Elaborating entity "decoder_A" for hierarchy "uPC:inst2|decoder_A:inst2"
-Info (12128): Elaborating entity "decoder_B" for hierarchy "uPC:inst2|decoder_B:inst3"
+Info (12128): Elaborating entity "altsyncram_gqb1" for hierarchy "uPC:inst6|uP_ROM:inst6|altsyncram:altsyncram_component|altsyncram_gqb1:auto_generated"
+Info (12128): Elaborating entity "uA_reg" for hierarchy "uPC:inst6|uA_reg:inst9"
+Info (12128): Elaborating entity "uI_C" for hierarchy "uPC:inst6|uI_C:inst11"
+Info (12128): Elaborating entity "decoder_C" for hierarchy "uPC:inst6|decoder_C:inst12"
+Info (12128): Elaborating entity "74138" for hierarchy "uPC:inst6|decoder_C:inst12|74138:decoder_C_1"
+Info (12130): Elaborated megafunction instantiation "uPC:inst6|decoder_C:inst12|74138:decoder_C_1"
+Info (12128): Elaborating entity "decoder_A" for hierarchy "uPC:inst6|decoder_A:inst2"
+Info (12128): Elaborating entity "decoder_B" for hierarchy "uPC:inst6|decoder_B:inst3"
 Info (12128): Elaborating entity "STEP" for hierarchy "STEP:inst1"
 Info (12128): Elaborating entity "REGS_MD" for hierarchy "REGS_MD:inst4"
 Info (12128): Elaborating entity "lpm_latch0" for hierarchy "REGS_MD:inst4|lpm_latch0:inst1"
@@ -797,95 +800,97 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/alts
     Info (12023): Found entity 1: altsyncram_r1k1
 Info (12128): Elaborating entity "altsyncram_r1k1" for hierarchy "RAM8:inst3|altsyncram:altsyncram_component|altsyncram_r1k1:auto_generated"
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13047): Converted the fan-out from the tri-state buffer "inst5[7]" to the node "ALU_MD:inst|inst7[7]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "inst5[6]" to the node "ALU_MD:inst|inst7[6]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "inst5[5]" to the node "ALU_MD:inst|inst7[5]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "inst5[4]" to the node "ALU_MD:inst|inst7[4]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "inst5[3]" to the node "ALU_MD:inst|inst7[3]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "inst5[2]" to the node "ALU_MD:inst|inst7[2]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "inst5[1]" to the node "ALU_MD:inst|inst7[1]" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "inst5[0]" to the node "ALU_MD:inst|inst7[0]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "inst5[7]" to the node "ALU_MD:inst7|inst7[7]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "inst5[6]" to the node "ALU_MD:inst7|inst7[6]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "inst5[5]" to the node "ALU_MD:inst7|inst7[5]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "inst5[4]" to the node "ALU_MD:inst7|inst7[4]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "inst5[3]" to the node "ALU_MD:inst7|inst7[3]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "inst5[2]" to the node "ALU_MD:inst7|inst7[2]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "inst5[1]" to the node "ALU_MD:inst7|inst7[1]" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "inst5[0]" to the node "ALU_MD:inst7|inst7[0]" into an OR gate
 Warning (13012): Latch REGS_MD:inst4|lpm_latch0:inst3|lpm_latch:inst|latches[7] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal uPC:inst2|uP_ROM:inst6|altsyncram:altsyncram_component|altsyncram_gqb1:auto_generated|q_a[15]
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uPC:inst6|uP_ROM:inst6|altsyncram:altsyncram_component|altsyncram_gqb1:auto_generated|q_a[15]
 Warning (13012): Latch REGS_MD:inst4|lpm_latch0:inst3|lpm_latch:inst|latches[6] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal uPC:inst2|uP_ROM:inst6|altsyncram:altsyncram_component|altsyncram_gqb1:auto_generated|q_a[15]
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uPC:inst6|uP_ROM:inst6|altsyncram:altsyncram_component|altsyncram_gqb1:auto_generated|q_a[15]
 Warning (13012): Latch REGS_MD:inst4|lpm_latch0:inst3|lpm_latch:inst|latches[5] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal uPC:inst2|uP_ROM:inst6|altsyncram:altsyncram_component|altsyncram_gqb1:auto_generated|q_a[15]
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uPC:inst6|uP_ROM:inst6|altsyncram:altsyncram_component|altsyncram_gqb1:auto_generated|q_a[15]
 Warning (13012): Latch REGS_MD:inst4|lpm_latch0:inst3|lpm_latch:inst|latches[4] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal uPC:inst2|uP_ROM:inst6|altsyncram:altsyncram_component|altsyncram_gqb1:auto_generated|q_a[15]
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uPC:inst6|uP_ROM:inst6|altsyncram:altsyncram_component|altsyncram_gqb1:auto_generated|q_a[15]
 Warning (13012): Latch REGS_MD:inst4|lpm_latch0:inst3|lpm_latch:inst|latches[3] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal uPC:inst2|uP_ROM:inst6|altsyncram:altsyncram_component|altsyncram_gqb1:auto_generated|q_a[15]
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uPC:inst6|uP_ROM:inst6|altsyncram:altsyncram_component|altsyncram_gqb1:auto_generated|q_a[15]
 Warning (13012): Latch REGS_MD:inst4|lpm_latch0:inst3|lpm_latch:inst|latches[2] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal uPC:inst2|uP_ROM:inst6|altsyncram:altsyncram_component|altsyncram_gqb1:auto_generated|q_a[15]
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uPC:inst6|uP_ROM:inst6|altsyncram:altsyncram_component|altsyncram_gqb1:auto_generated|q_a[15]
 Warning (13012): Latch REGS_MD:inst4|lpm_latch0:inst3|lpm_latch:inst|latches[1] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal uPC:inst2|uP_ROM:inst6|altsyncram:altsyncram_component|altsyncram_gqb1:auto_generated|q_a[15]
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uPC:inst6|uP_ROM:inst6|altsyncram:altsyncram_component|altsyncram_gqb1:auto_generated|q_a[15]
 Warning (13012): Latch REGS_MD:inst4|lpm_latch0:inst3|lpm_latch:inst|latches[0] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal uPC:inst2|uP_ROM:inst6|altsyncram:altsyncram_component|altsyncram_gqb1:auto_generated|q_a[15]
-Warning (13012): Latch ALU_MD:inst|REG0_2:inst2|inst[7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal uPC:inst6|uP_ROM:inst6|altsyncram:altsyncram_component|altsyncram_gqb1:auto_generated|q_a[15]
+Warning (13012): Latch ALU_MD:inst7|REG0_2:inst2|inst[7] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[1]
-Warning (13012): Latch ALU_MD:inst|REG0_2:inst2|inst[6] has unsafe behavior
+Warning (13012): Latch ALU_MD:inst7|REG0_2:inst2|inst[6] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[1]
-Warning (13012): Latch ALU_MD:inst|REG0_2:inst2|inst[5] has unsafe behavior
+Warning (13012): Latch ALU_MD:inst7|REG0_2:inst2|inst[5] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[1]
-Warning (13012): Latch ALU_MD:inst|REG0_2:inst2|inst[4] has unsafe behavior
+Warning (13012): Latch ALU_MD:inst7|REG0_2:inst2|inst[4] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[1]
-Warning (13012): Latch ALU_MD:inst|REG0_2:inst2|inst[3] has unsafe behavior
+Warning (13012): Latch ALU_MD:inst7|REG0_2:inst2|inst[3] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[1]
-Warning (13012): Latch ALU_MD:inst|REG0_2:inst2|inst[2] has unsafe behavior
+Warning (13012): Latch ALU_MD:inst7|REG0_2:inst2|inst[2] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[1]
-Warning (13012): Latch ALU_MD:inst|REG0_2:inst2|inst[1] has unsafe behavior
+Warning (13012): Latch ALU_MD:inst7|REG0_2:inst2|inst[1] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[1]
-Warning (13012): Latch ALU_MD:inst|REG0_2:inst2|inst[0] has unsafe behavior
+Warning (13012): Latch ALU_MD:inst7|REG0_2:inst2|inst[0] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[1]
-Warning (13012): Latch ALU_MD:inst|REG0_2:inst2|inst1[7] has unsafe behavior
+Warning (13012): Latch ALU_MD:inst7|REG0_2:inst2|inst1[7] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[1]
-Warning (13012): Latch ALU_MD:inst|REG0_2:inst2|inst1[6] has unsafe behavior
+Warning (13012): Latch ALU_MD:inst7|REG0_2:inst2|inst1[6] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[1]
-Warning (13012): Latch ALU_MD:inst|REG0_2:inst2|inst1[5] has unsafe behavior
+Warning (13012): Latch ALU_MD:inst7|REG0_2:inst2|inst1[5] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[1]
-Warning (13012): Latch ALU_MD:inst|REG0_2:inst2|inst1[4] has unsafe behavior
+Warning (13012): Latch ALU_MD:inst7|REG0_2:inst2|inst1[4] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[1]
-Warning (13012): Latch ALU_MD:inst|REG0_2:inst2|inst1[3] has unsafe behavior
+Warning (13012): Latch ALU_MD:inst7|REG0_2:inst2|inst1[3] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[1]
-Warning (13012): Latch ALU_MD:inst|REG0_2:inst2|inst1[2] has unsafe behavior
+Warning (13012): Latch ALU_MD:inst7|REG0_2:inst2|inst1[2] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[1]
-Warning (13012): Latch ALU_MD:inst|REG0_2:inst2|inst1[1] has unsafe behavior
+Warning (13012): Latch ALU_MD:inst7|REG0_2:inst2|inst1[1] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[1]
-Warning (13012): Latch ALU_MD:inst|REG0_2:inst2|inst1[0] has unsafe behavior
+Warning (13012): Latch ALU_MD:inst7|REG0_2:inst2|inst1[0] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[1]
-Warning (13012): Latch ALU_MD:inst|REG0_2:inst2|inst2[7] has unsafe behavior
+Warning (13012): Latch ALU_MD:inst7|REG0_2:inst2|inst2[7] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[1]
-Warning (13012): Latch ALU_MD:inst|REG0_2:inst2|inst2[6] has unsafe behavior
+Warning (13012): Latch ALU_MD:inst7|REG0_2:inst2|inst2[6] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[1]
-Warning (13012): Latch ALU_MD:inst|REG0_2:inst2|inst2[5] has unsafe behavior
+Warning (13012): Latch ALU_MD:inst7|REG0_2:inst2|inst2[5] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[1]
-Warning (13012): Latch ALU_MD:inst|REG0_2:inst2|inst2[4] has unsafe behavior
+Warning (13012): Latch ALU_MD:inst7|REG0_2:inst2|inst2[4] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[1]
-Warning (13012): Latch ALU_MD:inst|REG0_2:inst2|inst2[3] has unsafe behavior
+Warning (13012): Latch ALU_MD:inst7|REG0_2:inst2|inst2[3] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[1]
-Warning (13012): Latch ALU_MD:inst|REG0_2:inst2|inst2[2] has unsafe behavior
+Warning (13012): Latch ALU_MD:inst7|REG0_2:inst2|inst2[2] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[1]
-Warning (13012): Latch ALU_MD:inst|REG0_2:inst2|inst2[1] has unsafe behavior
+Warning (13012): Latch ALU_MD:inst7|REG0_2:inst2|inst2[1] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[1]
-Warning (13012): Latch ALU_MD:inst|REG0_2:inst2|inst2[0] has unsafe behavior
+Warning (13012): Latch ALU_MD:inst7|REG0_2:inst2|inst2[0] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal REGS_MD:inst4|lpm_latch0:inst2|lpm_latch:inst|latches[1]
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "uPC:inst2|uA_reg:inst9|inst2" is converted into an equivalent circuit using register "uPC:inst2|uA_reg:inst9|inst2~_emulated" and latch "uPC:inst2|uA_reg:inst9|inst2~1"
-    Warning (13310): Register "uPC:inst2|uA_reg:inst9|inst1" is converted into an equivalent circuit using register "uPC:inst2|uA_reg:inst9|inst1~_emulated" and latch "uPC:inst2|uA_reg:inst9|inst1~1"
-    Warning (13310): Register "uPC:inst2|uA_reg:inst9|inst5" is converted into an equivalent circuit using register "uPC:inst2|uA_reg:inst9|inst5~_emulated" and latch "uPC:inst2|uA_reg:inst9|inst5~1"
-    Warning (13310): Register "uPC:inst2|uA_reg:inst9|inst4" is converted into an equivalent circuit using register "uPC:inst2|uA_reg:inst9|inst4~_emulated" and latch "uPC:inst2|uA_reg:inst9|inst4~1"
-    Warning (13310): Register "uPC:inst2|uA_reg:inst9|inst" is converted into an equivalent circuit using register "uPC:inst2|uA_reg:inst9|inst~_emulated" and latch "uPC:inst2|uA_reg:inst9|inst~1"
+    Warning (13310): Register "uPC:inst6|uA_reg:inst9|inst2" is converted into an equivalent circuit using register "uPC:inst6|uA_reg:inst9|inst2~_emulated" and latch "uPC:inst6|uA_reg:inst9|inst2~1"
+    Warning (13310): Register "uPC:inst6|uA_reg:inst9|inst1" is converted into an equivalent circuit using register "uPC:inst6|uA_reg:inst9|inst1~_emulated" and latch "uPC:inst6|uA_reg:inst9|inst1~1"
+    Warning (13310): Register "uPC:inst6|uA_reg:inst9|inst5" is converted into an equivalent circuit using register "uPC:inst6|uA_reg:inst9|inst5~_emulated" and latch "uPC:inst6|uA_reg:inst9|inst5~1"
+    Warning (13310): Register "uPC:inst6|uA_reg:inst9|inst4" is converted into an equivalent circuit using register "uPC:inst6|uA_reg:inst9|inst4~_emulated" and latch "uPC:inst6|uA_reg:inst9|inst4~1"
+    Warning (13310): Register "uPC:inst6|uA_reg:inst9|inst" is converted into an equivalent circuit using register "uPC:inst6|uA_reg:inst9|inst~_emulated" and latch "uPC:inst6|uA_reg:inst9|inst~1"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "SE[6]" is stuck at VCC
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 755 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 771 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
-    Info (21059): Implemented 148 output pins
-    Info (21061): Implemented 562 logic cells
+    Info (21059): Implemented 160 output pins
+    Info (21061): Implemented 566 logic cells
     Info (21064): Implemented 32 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 82 warnings
-    Info: Peak virtual memory: 4656 megabytes
-    Info: Processing ended: Sun Jan 06 23:03:57 2019
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 86 warnings
+    Info: Peak virtual memory: 4655 megabytes
+    Info: Processing ended: Mon Jan 07 16:04:14 2019
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:04
 

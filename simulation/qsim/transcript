@@ -9,19 +9,33 @@
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module cpu_8bit_vlg_sample_tst
 # -- Compiling module cpu_8bit_vlg_check_tst
-# ** Warning: 8-bit-cpu.vt(538): (vlog-2576) [BSOB] - Bit-select into 'M_expected_prev' is out of bounds.
+# ** Warning: 8-bit-cpu.vt(2234): (vlog-2576) [BSOB] - Bit-select into 'M_expected_prev' is out of bounds.
 # 
-# ** Warning: 8-bit-cpu.vt(538): (vlog-2576) [BSOB] - Bit-select into 'M_prev' is out of bounds.
+# ** Warning: 8-bit-cpu.vt(2234): (vlog-2576) [BSOB] - Bit-select into 'M_prev' is out of bounds.
 # 
-# ** Warning: 8-bit-cpu.vt(538): (vlog-2576) [BSOB] - Bit-select into 'M_expected_prev' is out of bounds.
+# ** Warning: 8-bit-cpu.vt(2234): (vlog-2576) [BSOB] - Bit-select into 'M_expected_prev' is out of bounds.
 # 
-# ** Warning: 8-bit-cpu.vt(539): (vlog-2576) [BSOB] - Bit-select into 'M_expected_prev' is out of bounds.
+# ** Warning: 8-bit-cpu.vt(2235): (vlog-2576) [BSOB] - Bit-select into 'M_expected_prev' is out of bounds.
 # 
-# ** Warning: 8-bit-cpu.vt(539): (vlog-2576) [BSOB] - Bit-select into 'last_M_exp' is out of bounds.
+# ** Warning: 8-bit-cpu.vt(2235): (vlog-2576) [BSOB] - Bit-select into 'last_M_exp' is out of bounds.
 # 
-# ** Warning: 8-bit-cpu.vt(548): (vlog-2576) [BSOB] - Bit-select into 'last_M_exp' is out of bounds.
+# ** Warning: 8-bit-cpu.vt(2244): (vlog-2576) [BSOB] - Bit-select into 'last_M_exp' is out of bounds.
 # 
-# ** Warning: 8-bit-cpu.vt(548): (vlog-2576) [BSOB] - Bit-select into 'M_expected_prev' is out of bounds.
+# ** Warning: 8-bit-cpu.vt(2244): (vlog-2576) [BSOB] - Bit-select into 'M_expected_prev' is out of bounds.
+# 
+# ** Warning: 8-bit-cpu.vt(3170): (vlog-2576) [BSOB] - Bit-select into 'SE_expected_prev' is out of bounds.
+# 
+# ** Warning: 8-bit-cpu.vt(3170): (vlog-2576) [BSOB] - Bit-select into 'SE_prev' is out of bounds.
+# 
+# ** Warning: 8-bit-cpu.vt(3170): (vlog-2576) [BSOB] - Bit-select into 'SE_expected_prev' is out of bounds.
+# 
+# ** Warning: 8-bit-cpu.vt(3171): (vlog-2576) [BSOB] - Bit-select into 'SE_expected_prev' is out of bounds.
+# 
+# ** Warning: 8-bit-cpu.vt(3171): (vlog-2576) [BSOB] - Bit-select into 'last_SE_exp' is out of bounds.
+# 
+# ** Warning: 8-bit-cpu.vt(3180): (vlog-2576) [BSOB] - Bit-select into 'last_SE_exp' is out of bounds.
+# 
+# ** Warning: 8-bit-cpu.vt(3180): (vlog-2576) [BSOB] - Bit-select into 'SE_expected_prev' is out of bounds.
 # 
 # -- Compiling module cpu_8bit_vlg_vec_tst
 # 
@@ -43,87 +57,69 @@
 # Loading work.cpu_8bit_vlg_sample_tst
 # Loading work.cpu_8bit_vlg_check_tst
 # Loading altera_ver.PRIM_GDFF_LOW
-# ERROR! Vector Mismatch for output port M[4] :: @time = 1000000.000 ps
+# ERROR! Vector Mismatch for output port M[1] :: @time = 1000000.000 ps
 #      Expected value = 000000000000000000000000
-#      Real value = 000000001100000001001000
-# ERROR! Vector Mismatch for output port M[7] :: @time = 1000000.000 ps
+#      Real value = 000000111000000000010001
+# ERROR! Vector Mismatch for output port M[5] :: @time = 1000000.000 ps
 #      Expected value = 000000000000000000000000
-#      Real value = 000000001100000001001000
-# ERROR! Vector Mismatch for output port M[15] :: @time = 1000000.000 ps
-#      Expected value = 000000000000000000000000
-#      Real value = 000000001100000001001000
+#      Real value = 000000111000000000010001
 # ERROR! Vector Mismatch for output port M[16] :: @time = 1000000.000 ps
 #      Expected value = 000000000000000000000000
-#      Real value = 000000001100000001001000
+#      Real value = 000000111000000000010001
+# ERROR! Vector Mismatch for output port M[17] :: @time = 1000000.000 ps
+#      Expected value = 000000000000000000000000
+#      Real value = 000000111000000000010001
+# ERROR! Vector Mismatch for output port M[18] :: @time = 1000000.000 ps
+#      Expected value = 000000000000000000000000
+#      Real value = 000000111000000000010001
+# ERROR! Vector Mismatch for output port R2[0] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = xxxxxxxx
+# ERROR! Vector Mismatch for output port R2[1] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = xxxxxxxx
+# ERROR! Vector Mismatch for output port R2[2] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = xxxxxxxx
+# ERROR! Vector Mismatch for output port R2[3] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = xxxxxxxx
+# ERROR! Vector Mismatch for output port R2[4] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = xxxxxxxx
+# ERROR! Vector Mismatch for output port R2[5] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = xxxxxxxx
+# ERROR! Vector Mismatch for output port R2[6] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = xxxxxxxx
+# ERROR! Vector Mismatch for output port R2[7] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = xxxxxxxx
 # ERROR! Vector Mismatch for output port M[2] :: @time = 1024000.000 ps
 #      Expected value = 000000000000000000000000
-#      Real value = 000000011010001000000110
-# ERROR! Vector Mismatch for output port M[3] :: @time = 1024000.000 ps
+#      Real value = 000000011110110110010010
+# ERROR! Vector Mismatch for output port M[8] :: @time = 1024000.000 ps
 #      Expected value = 000000000000000000000000
-#      Real value = 000000011010001000000110
-# ERROR! Vector Mismatch for output port M[10] :: @time = 1024000.000 ps
+#      Real value = 000000011110110110010010
+# ERROR! Vector Mismatch for output port M[9] :: @time = 1024000.000 ps
 #      Expected value = 000000000000000000000000
-#      Real value = 000000011010001000000110
+#      Real value = 000000011110110110010010
+# ERROR! Vector Mismatch for output port M[11] :: @time = 1024000.000 ps
+#      Expected value = 000000000000000000000000
+#      Real value = 000000011110110110010010
+# ERROR! Vector Mismatch for output port M[12] :: @time = 1024000.000 ps
+#      Expected value = 000000000000000000000000
+#      Real value = 000000011110110110010010
 # ERROR! Vector Mismatch for output port M[14] :: @time = 1024000.000 ps
 #      Expected value = 000000000000000000000000
-#      Real value = 000000011010001000000110
-# ERROR! Vector Mismatch for output port M[17] :: @time = 1024000.000 ps
+#      Real value = 000000011110110110010010
+# ERROR! Vector Mismatch for output port M[15] :: @time = 1024000.000 ps
 #      Expected value = 000000000000000000000000
-#      Real value = 000000011010001000000110
-# ERROR! Vector Mismatch for output port T1 :: @time = 1024000.000 ps
-#      Expected value = 0
-#      Real value = 1
-# ERROR! Vector Mismatch for output port T2 :: @time = 1028000.000 ps
-#      Expected value = 0
-#      Real value = 1
-# ERROR! Vector Mismatch for output port T3 :: @time = 1032000.000 ps
-#      Expected value = 0
-#      Real value = 1
-# ERROR! Vector Mismatch for output port T4 :: @time = 1036000.000 ps
-#      Expected value = 0
-#      Real value = 1
-# ERROR! Vector Mismatch for output port M[1] :: @time = 1064000.000 ps
+#      Real value = 000000011110110110010010
+# ERROR! Vector Mismatch for output port M[6] :: @time = 1064000.000 ps
 #      Expected value = 000000000000000000000000
-#      Real value = 000000011011010000011001
-# ERROR! Vector Mismatch for output port M[5] :: @time = 1064000.000 ps
-#      Expected value = 000000000000000000000000
-#      Real value = 000000011011010000011001
-# ERROR! Vector Mismatch for output port M[11] :: @time = 1064000.000 ps
-#      Expected value = 000000000000000000000000
-#      Real value = 000000011011010000011001
-# ERROR! Vector Mismatch for output port M[13] :: @time = 1064000.000 ps
-#      Expected value = 000000000000000000000000
-#      Real value = 000000011011010000011001
-# ERROR! Vector Mismatch for output port M[12] :: @time = 1104000.000 ps
-#      Expected value = 000000000000000000000000
-#      Real value = 100100011001101000000001
-# ERROR! Vector Mismatch for output port M[21] :: @time = 1104000.000 ps
-#      Expected value = 000000000000000000000000
-#      Real value = 100100011001101000000001
-# ERROR! Vector Mismatch for output port R2[0] :: @time = 1108000.000 ps
-#      Expected value = 00000000
-#      Real value = 00000001
-# ERROR! Vector Mismatch for output port M[8] :: @time = 1144000.000 ps
-#      Expected value = 000000000000000000000000
-#      Real value = 000000011110110110000010
-# ERROR! Vector Mismatch for output port M[9] :: @time = 1144000.000 ps
-#      Expected value = 000000000000000000000000
-#      Real value = 000000011110110110000010
-# ERROR! Vector Mismatch for output port M[20] :: @time = 1264000.000 ps
-#      Expected value = 000000000000000000000000
-#      Real value = 110010011011101000011010
-# ERROR! Vector Mismatch for output port M[23] :: @time = 1264000.000 ps
-#      Expected value = 000000000000000000000000
-#      Real value = 110010011011101000011010
-# ERROR! Vector Mismatch for output port M[22] :: @time = 1864000.000 ps
-#      Expected value = 000000000000000000000000
-#      Real value = 011000011000101101000001
-# ERROR! Vector Mismatch for output port R2[2] :: @time = 2268000.000 ps
-#      Expected value = 00000000
-#      Real value = 00000100
-# ERROR! Vector Mismatch for output port R2[3] :: @time = 3428000.000 ps
-#      Expected value = 00000000
-#      Real value = 00001001
-#          27 mismatched vectors : Simulation failed !
-# ** Note: $finish    : 8-bit-cpu.vt(1017)
+#      Real value = 000000000000000000100011
+#          21 mismatched vectors : Simulation failed !
+# ** Note: $finish    : 8-bit-cpu.vt(3415)
 #    Time: 10 us  Iteration: 0  Instance: /cpu_8bit_vlg_vec_tst/tb_out

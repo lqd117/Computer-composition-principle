@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 176 272)
+	(rect 16 16 176 304)
 	(text "ALU_MD" (rect 5 0 54 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 240 25 252)(font "Arial" ))
+	(text "inst" (rect 8 272 25 284)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -164,6 +164,48 @@ applicable agreement for further details.
 		(line (pt 160 160)(pt 144 160)(line_width 3))
 	)
 	(port
+		(pt 160 176)
+		(output)
+		(text "LDR0" (rect 0 0 30 14)(font "Arial" (font_size 8)))
+		(text "LDR0" (rect 109 171 139 185)(font "Arial" (font_size 8)))
+		(line (pt 160 176)(pt 144 176))
+	)
+	(port
+		(pt 160 192)
+		(output)
+		(text "LDR1" (rect 0 0 30 14)(font "Arial" (font_size 8)))
+		(text "LDR1" (rect 109 187 139 201)(font "Arial" (font_size 8)))
+		(line (pt 160 192)(pt 144 192))
+	)
+	(port
+		(pt 160 208)
+		(output)
+		(text "LDR2" (rect 0 0 30 14)(font "Arial" (font_size 8)))
+		(text "LDR2" (rect 109 203 139 217)(font "Arial" (font_size 8)))
+		(line (pt 160 208)(pt 144 208))
+	)
+	(port
+		(pt 160 224)
+		(output)
+		(text "R0_B" (rect 0 0 30 14)(font "Arial" (font_size 8)))
+		(text "R0_B" (rect 109 219 139 233)(font "Arial" (font_size 8)))
+		(line (pt 160 224)(pt 144 224))
+	)
+	(port
+		(pt 160 240)
+		(output)
+		(text "R1_B" (rect 0 0 30 14)(font "Arial" (font_size 8)))
+		(text "R1_B" (rect 109 235 139 249)(font "Arial" (font_size 8)))
+		(line (pt 160 240)(pt 144 240))
+	)
+	(port
+		(pt 160 256)
+		(output)
+		(text "R2_B" (rect 0 0 30 14)(font "Arial" (font_size 8)))
+		(text "R2_B" (rect 109 251 139 265)(font "Arial" (font_size 8)))
+		(line (pt 160 256)(pt 144 256))
+	)
+	(port
 		(pt 160 32)
 		(bidir)
 		(text "BUS[7..0]" (rect 0 0 53 14)(font "Arial" (font_size 8)))
@@ -171,6 +213,6 @@ applicable agreement for further details.
 		(line (pt 160 32)(pt 144 32)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 144 240))
+		(rectangle (rect 16 16 144 272))
 	)
 )

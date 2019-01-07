@@ -212,6 +212,13 @@ applicable agreement for further details.
 		(text "LDPC" (rect 93 299 123 313)(font "Arial" (font_size 8)))
 		(line (pt 144 304)(pt 128 304))
 	)
+	(port
+		(pt 144 320)
+		(output)
+		(text "SE[6..1]" (rect 0 0 43 14)(font "Arial" (font_size 8)))
+		(text "SE[6..1]" (rect 80 315 123 329)(font "Arial" (font_size 8)))
+		(line (pt 144 320)(pt 128 320)(line_width 3))
+	)
 	(drawing
 		(rectangle (rect 16 16 128 336))
 	)
