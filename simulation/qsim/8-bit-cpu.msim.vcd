@@ -3,7 +3,7 @@ $comment
 		vcd file 8-bit-cpu.msim.vcd -direction
 $end
 $date
-	Mon Jan 07 22:11:52 2019
+	Tue Jan 08 10:07:19 2019
 $end
 $version
 	ModelSim Version 10.1d

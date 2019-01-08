@@ -1,11 +1,11 @@
-Fitter Status : Successful - Mon Jan 07 22:04:30 2019
+Fitter Status : Successful - Tue Jan 08 10:38:30 2019
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
 Revision Name : 8-bit-cpu
 Top-level Entity Name : cpu_8bit
 Family : Cyclone III
 Device : EP3C55F484C8
 Timing Models : Final
-Total logic elements : 564 / 55,856 ( 1 % )
+Total logic elements : 563 / 55,856 ( 1 % )
     Total combinational functions : 561 / 55,856 ( 1 % )
     Dedicated logic registers : 19 / 55,856 ( < 1 % )
 Total registers : 19
